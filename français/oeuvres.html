@@ -35,49 +35,59 @@
     <main>
 
         <section>
-            <carrousel x-data="{hrefCourant: '#image-1',}">
-                <div class="carrousel" x-ref="parent" @scroll.debounce.350ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
-                    <div id="image-1" class="image">
+            <div class="carrousel" x-data="{}">
+                <button @click="$refs.parent.scrollLeft -= $refs.parent.clientWidth" class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"><</button><button @click="$refs.parent.scrollLeft += $refs.parent.clientWidth" class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+                <div class="carrousel_parent-image" x-ref="parent">
+                    <div id="ecran-1" class="carrousel_image">
                         <figure>
-                            <a href="page-oeuvre-1.html"><img src="../public/img/oeuvre-john-1.jpg" alt="oeuvre-john-1"></a>
+                            <img src="../public/img/oeuvre-john-1.jpg" alt="image ecran 1">
+                            <figcaption>Oeuvre de John Doe</figcaption>
                         </figure>
                     </div>
-                    <div id="image-2" class="carrousel-image">
+                    <div id="ecran-2" class="carrousel_image">
                         <figure>
-                            <img src="../public/img/oeuvre-john-2.jpg" alt="oeuvre-john-2">
+                            <img src="../public/img/oeuvre-john-2.jpg" alt="image ecran 2">
+                            <figcaption>Oeuvre de John Doe</figcaption>
                         </figure>
                     </div>
-                    <div id="image-3" class="carrousel-image">
+                    <div id="ecran-3" class="carrousel_image">
                         <figure>
-                            <img src="../public/img/oeuvre-douglas-1.webp" alt="oeuvre-douglas-1">
+                            <img src="../public/img/oeuvre-douglas-1.webp" alt="image ecran 3">
+                            <figcaption>Oeuvre de Douglas</figcaption>
                         </figure>
                     </div>
-                    <div id="image-4" class="carrousel-image">
+                    <div id="ecran-4" class="carrousel_image">
                         <figure>
-                            <img src="../public/img/oeuvre-douglas-2.webp" alt="oeuvre-douglas-2">
+                            <img src="../public/img/oeuvre-douglas-2.webp" alt="image ecran 4">
+                            <figcaption>Oeuvre de Douglas</figcaption>
                         </figure>
                     </div>
-                    <div id="image-5" class="carrousel-image">
+                    <div id="ecran-5" class="carrousel_image">
                         <figure>
-                            <img src="../public/img/oeuvre-oleh1.jpg" alt="oeuvre-oleh-1">
+                            <img src="../public/img/oeuvre-oleh1.jpg" alt="image ecran 5">
+                            <figcaption>Oeuvre d'Oleh</figcaption>
                         </figure>
                     </div>
-                    <div id="image-6" class="carrousel-image">
+                    <div id="ecran-6" class="carrousel_image">
                         <figure>
-                            <img src="../public/img/oeuvre-oleh-2.jpg" alt="oeuvre-oleh-2">
+                            <img src="../public/img/oeuvre-oleh-2.jpg" alt="image ecran 6">
+                            <figcaption>Oeuvre d'Oleh</figcaption>
                         </figure>
                     </div>
-                    <div id="image-7" class="carrousel-image">
+                    <div id="ecran-7" class="carrousel_image">
                         <figure>
-                            <img src="../public/img/oeuvre-peter-1.jpg" alt="oeuvre-peter-1">
+                            <img src="../public/img/oeuvre-peter-1.jpg" alt="image ecran 7">
+                            <figcaption>Oeuvre de peter</figcaption>
                         </figure>
                     </div>
-                    <div id="image-8" class="carrousel-image">
+                    <div id="ecran-8" class="carrousel_image">
                         <figure>
-                            <img src="../public/img/oeuvre-peter-2.jpg" alt="oeuvre-peter-1">
+                            <img src="../public/img/oeuvre-peter-2.jpg" alt="image ecran 8">
+                            <figcaption>Oeuvre de peter</figcaption>
                         </figure>
                     </div>
-            </carrousel>
+                    
+                </div>
         </section>
 
         <p>

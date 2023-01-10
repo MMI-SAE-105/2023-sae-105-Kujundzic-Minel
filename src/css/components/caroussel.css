@@ -11,7 +11,6 @@
     width: 80%;
     flex: none;
     scroll-snap-align: start; 
-;
   }
 
   .carrousel-image figure {
@@ -22,3 +21,50 @@
   .carrousel {
     position: relative;
   }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+.carrousel_parent-image {
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+  
+  }
+.carrousel_image {
+  width: 100%;
+  flex: none;
+  scroll-snap-align:start;
+  }
+.carrousel_image figure {
+    margin: 0;
+  }
+
+  .carrousel {
+      position: relative;
+    }
+    
+    .carrousel_btn {
+      position: absolute;
+      top: 50%; 
+      transform: translateY(-50%); 
+      width: 2rem;
+      height: 2rem;
+      background: rgba(0,0,0,0.5);
+      border-radius: 50%;
+      border: none;
+      display: grid;
+      place-content: center;
+      color: #fff;
+    }
+    
+    .carrousel_btn-avant {
+      left: 0;
+    }
+    
+    .carrousel_btn-apres {
+      right: 0;
+    }
