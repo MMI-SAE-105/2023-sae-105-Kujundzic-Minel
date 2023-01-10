@@ -1,0 +1,71 @@
+.header {
+    background: #505050;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    display: block;
+    width: rem;
+}
+
+.header__btn {
+    display: block;
+    width: 10rem;
+    background-color: #505050;
+    border: none;
+    align-items: flex-end;
+    right: 0px;
+    position: fixed;
+    
+}
+
+.header__nav--btn {
+    display: block;
+    padding: 0;
+    width: 1rem;
+    background-color: #505050;
+    border: none;
+    align-items: flex-end;
+    right: 0px;
+    position: fixed;
+}
+
+.icon_langue {
+    width: 4rem;
+    height: 4rem;
+    display: block;
+    margin: auto;
+    
+}
+
+.header__nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    background-color: #505050;
+}
+
+.header__nav--ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__nav--ul li {
+    display: block;
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style: none;  
+    line-height: 5rem;
+}
+
+.header__nav--ul a {
+    color: rgb(255, 255, 255);
+}
