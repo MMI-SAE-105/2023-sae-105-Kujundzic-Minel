@@ -35,44 +35,44 @@
     <main>
 
         <section>
-            <carrousel x-data="{hrefCourant: '#ecran-1',}">
-                <div class="carrousel" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
-                    <div id="ecran-1" class="carrousel_ecran">
+            <carrousel x-data="{hrefCourant: '#image-1',}">
+                <div class="carrousel" x-ref="parent" @scroll.debounce.350ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                    <div id="image-1" class="image">
                         <figure>
                             <a href="page-oeuvre-1.html"><img src="../public/img/oeuvre-john-1.jpg" alt="oeuvre-john-1"></a>
                         </figure>
                     </div>
-                    <div id="ecran-2" class="carrousel-image">
+                    <div id="image-2" class="carrousel-image">
                         <figure>
                             <img src="../public/img/oeuvre-john-2.jpg" alt="oeuvre-john-2">
                         </figure>
                     </div>
-                    <div id="ecran-3" class="carrousel-image">
+                    <div id="image-3" class="carrousel-image">
                         <figure>
                             <img src="../public/img/oeuvre-douglas-1.webp" alt="oeuvre-douglas-1">
                         </figure>
                     </div>
-                    <div id="ecran-4" class="carrousel-image">
+                    <div id="image-4" class="carrousel-image">
                         <figure>
                             <img src="../public/img/oeuvre-douglas-2.webp" alt="oeuvre-douglas-2">
                         </figure>
                     </div>
-                    <div id="ecran-5" class="carrousel-image">
+                    <div id="image-5" class="carrousel-image">
                         <figure>
                             <img src="../public/img/oeuvre-oleh1.jpg" alt="oeuvre-oleh-1">
                         </figure>
                     </div>
-                    <div id="ecran-6" class="carrousel-image">
+                    <div id="image-6" class="carrousel-image">
                         <figure>
                             <img src="../public/img/oeuvre-oleh-2.jpg" alt="oeuvre-oleh-2">
                         </figure>
                     </div>
-                    <div id="ecran-7" class="carrousel-image">
+                    <div id="image-7" class="carrousel-image">
                         <figure>
                             <img src="../public/img/oeuvre-peter-1.jpg" alt="oeuvre-peter-1">
                         </figure>
                     </div>
-                    <div id="ecran-8" class="carrousel-image">
+                    <div id="image-8" class="carrousel-image">
                         <figure>
                             <img src="../public/img/oeuvre-peter-2.jpg" alt="oeuvre-peter-1">
                         </figure>

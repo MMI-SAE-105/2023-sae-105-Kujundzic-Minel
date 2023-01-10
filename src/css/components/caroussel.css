@@ -1,0 +1,19 @@
+.carrousel {
+    display: flex;
+    width: 95%;
+    overflow-x: scroll; 
+    scroll-behavior: smooth; 
+    scroll-snap-type: x mandatory; 
+    margin-left: 10px;
+  }
+
+  .carrousel-image {
+    width: 80%;
+    flex: none;
+    scroll-snap-align: start; 
+  }
+
+  .carrousel-image figure {
+    margin: 0;
+    padding: 10px;
+  }
