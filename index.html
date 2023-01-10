@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" x-data={open:false} :class="open && 'noScroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>BosnianMemory</title>
+</head>
+<body class="fondindex">
+    
+    <header class="header">
+       <a href="index.html" class="logo"> <img src="public/img/logo.webp" alt="Logo Conceptu'Art"></a>
+
+    
+
+   
+        <div>
+            <button class="header__btn" @click="open = ! open">
+                <img src="public/img/icon-menu.webp"icon menu">
+            </button> 
+            <nav class="header__nav" x-show="open">
+                <button class="header__nav--btn" @click="open = ! open">
+                    <img src="public/img/icon-menu.webp" alt="icon menu">
+                </button>
+                <ul class="header__nav--ul">
+                    <li class="header__nav--item1"><a href="html_francais/artistes.html">Nos Artistes</a></li>
+                    <li class="header__nav--item2"><a href="html_francais/oeuvres.html">Découvrir les oeuvres</a></li>
+                    <li class="header__nav--item3"><a href="html_francais/contact.html">Contact</a></li>
+                    <li class="header__nav--item4"><a href="html_francais/billeterie.html">Billeterie</a></li>
+                    <li class="header__nav--item5"><a href="html_francais/informations.html">Informations</a></li>
+                </ul>
+                <a href="/html_anglais/index_anglais.html"><img class="icon_langue" src="public/img/ang-flag.png" alt="icon drapeau anglais"></a>
+            </nav>
+        </div>
+    
+    </header>
+
+
+    
+</body>
+</html>
