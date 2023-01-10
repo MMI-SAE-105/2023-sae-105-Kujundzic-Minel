@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" x-data={open:false} :class="open && 'noScroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Informations</title>
+</head>
+<body class="fondindex">
+    
+    <header class="header">
+       <a href="../index.html" class="logo"> <img src="../public/img/logo.webp" alt="Logo Conceptu'Art"></a>   
+        <div>
+            <button class="header__btn" @click="open = ! open">
+                <img src="../public/img/icon-menu.webp"icon menu">
+            </button> 
+            <nav class="header__nav" x-show="open">
+                <button class="header__nav--btn" @click="open = ! open">
+                    <img src="../public/img/icon-menu.webp" alt="icon menu">
+                </button>
+                <ul class="header__nav--ul">
+                    <li class="header__nav--item1"><a href="artistes.html">Nos Artistes</a></li>
+                    <li class="header__nav--item2"><a href="oeuvres.html">Découvrir les oeuvres</a></li>
+                    <li class="header__nav--item3"><a href="contact.html">Contact</a></li>
+                    <li class="header__nav--item4"><a href="billeterie.html">Billeterie</a></li>
+                    <li class="header__nav--item5"><a href="informations.html">Informations</a></li>
+                </ul>
+                <a href="/html_anglais/index_anglais.html"><img class="icon_langue" src="public/img/ang-flag.png" alt="icon drapeau anglais"></a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <fieldset>
+            <legend>Informations</legend>
+            <h1>Nous sommes <span>ouvert</span></h1>
+            <p>du 13 avril au 23 juin 2021 mer/jeu/ven/sam/dim de 11h à 20h</p>
+            <p>Mardi Nocturne 11h à 22h</p>
+            <p>Rejoignez nous :Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+        </fieldset>
+
+        <h1>TARIFS</h1>
+        <p>Plein tarif ⇒ 11€</p>
+        <p>Tarif réduit ⇒ 7,50€</p>
+        <p>Réduction 13-25 ans ⇒ 5€</p>
+        <p>Fondation Cartier Pass ⇒ 18€ - 50€</p>
+        <p>Moins de 13 ans, 
+            Laissez-passer annuel, 
+            carte Icom, carte de presse, 
+            carte d'invalidité,
+             Fondation Cartier Pass, Etudiants ⇒ Gratuit</p>
+    </main>
+
+    <footer>
+        <p>Ce projet  été réalisez dans le cadre d’un exercice pedagogique à l’IUT <a href="http://mmimontbeliard.com/" target="_blank" class="footer__clickable"> l’IUT de Montbéliard</a> </p>
+        <img src="../public/img/twitter.webp" alt="Logo Twitter">
+        <img src="../public/img/linkedin.webp" alt="Logo Linkedin">
+        <p>Mentions légales</p>
+        <p>Kujundzic Minel</p>
+    </footer>
+    
+</body>
+</html>
