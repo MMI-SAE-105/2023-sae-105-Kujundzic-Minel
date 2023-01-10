@@ -11,9 +11,14 @@
     width: 80%;
     flex: none;
     scroll-snap-align: start; 
+;
   }
 
   .carrousel-image figure {
     margin: 0;
     padding: 10px;
+  }
+
+  .carrousel {
+    position: relative;
   }
