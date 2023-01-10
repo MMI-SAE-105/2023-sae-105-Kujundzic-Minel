@@ -22,7 +22,7 @@ p {
     line-height: 1,5rem;
 }
 
-h2 {
+h2 { 
     color: #000000;
     margin-left: 22px;
     margin-right: 22px;  
@@ -34,4 +34,10 @@ h1 {
     margin-left: 22px;
     margin-right: 22px;  
     font-size: 20px;  
+}
+
+
+.img--artiste {
+    display: flex;
+    margin: auto;   
 }
