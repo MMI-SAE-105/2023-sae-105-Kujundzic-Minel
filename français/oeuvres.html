@@ -39,7 +39,7 @@
                 <div class="carrousel" x-ref="parent" @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
                     <div id="ecran-1" class="carrousel_ecran">
                         <figure>
-                            <img src="../public/img/oeuvre-john-1.jpg" alt="oeuvre-john-1">
+                            <a href="page-oeuvre-1.html"><img src="../public/img/oeuvre-john-1.jpg" alt="oeuvre-john-1"></a>
                         </figure>
                     </div>
                     <div id="ecran-2" class="carrousel-image">
