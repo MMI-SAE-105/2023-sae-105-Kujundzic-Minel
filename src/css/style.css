@@ -5,3 +5,5 @@
 @import url(vendors/normalize.css);
 
 @import url(base/main.css);
+
+@import url(components/caroussel.css);
