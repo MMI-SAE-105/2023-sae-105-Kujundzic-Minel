@@ -32,7 +32,21 @@
         </div>
     </header>
     <main>
-            <img class="img--artiste" src="../public/img/page-tout-artiste/John baldessari.webp" alt="Image de John">
+
+        <!-- <img class="img--artiste" src="../public/img/page-tout-artiste/John baldessari.webp" alt="Image de John"> -->
+
+        <div x-data="{ open: false }">
+            <img class="img--artiste" src="../public/img/page-tout-artiste/John baldessari.webp" alt="Image de John"
+            @click="open = !open">
+            </img>
+            <a href="https://fr.wikipedia.org/wiki/John_Baldessari" x-show="open" x-transition.duration.300ms class="john__info--sup">
+                <p>Plus d'informations</p>
+            </a>
+        </div>
+
+
+
+
             <div class="text">
                 <p>John Baldessari, né le 17 juin 1931 à National City (Californie) est un artiste conceptuel américain, représentant du courant post-moderniste qui recourt notamment à la photographie.
                     De 1959 à 1968, John Baldessari réalise deux sortes d'œuvres : des peintures narratives, des toiles sur lesquelles des lettres sont peintes, et des Fichues Allégories, des photographies légendées en référence à l'histoire de l'art.

@@ -71,5 +71,24 @@ h1 {
 
 }
 
+.john__info--sup {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    text-align: center;
+    background-color: #505050;
+    list-style: none;
+    position: relative;
+}
+
+
+.john__info--sup p {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    text-align: center;
+    background-color: #505050;
+    list-style: none;
+    position: relative;
+    bottom: -80px;
+}
 
 
