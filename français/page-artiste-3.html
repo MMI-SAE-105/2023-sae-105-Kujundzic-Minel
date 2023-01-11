@@ -37,6 +37,16 @@
                 <p>Douglas Huebler est né le 27 octobre 1924. Il passe sa jeunesse dans l'État du Michigan. Il fait d'abord partie du minimalisme en participant à l'exposition Primary Structures au Musée juif de New York en 1966. Huebler expose là une œuvre recouverte de formica gris et rose, Bradford Series #10-65. Il abandonne la peinture et la sculpture en 1968 et produit des œuvres dans différentes formes en particulier la photographie documentaire. Il s'attache au temps, au lieu et à leur rapport. Dans 42e Parallèle (1968), par exemple, l'œuvre est constituée par des envois cachetés par la poste de lieux situés sur le 42e parallèle aux États-Unis. La dimension conceptuelle consiste à considérer le concept comme plus important que l'œuvre et son exécution.</p>
             </div>
 
+            <div x-data="{ open: false }">
+                <button class="john__info--sup"
+                  @click="open = !open"
+                ><p>Plus d'informations</p></button>
+                <ul class="john__info--link" x-show="open">
+                  <li><a href="https://fr.wikipedia.org/wiki/John_Baldessari">Wikipedia</a><li>
+                  <li><a href="https://www.wikiart.org/fr/john-baldessari">Wikiart</a></li>
+                </ul>
+              </div>
+
             <div class="img__oeuvre--section">
                 <img class="img--oeuvre" src="../public/img/oeuvre-douglas-1.webp" alt="Oeuvre de Douglas">
                 <img class="img--oeuvre" src="../public/img/oeuvre-douglas-2.webp" alt="Oeuvre de Douglas">

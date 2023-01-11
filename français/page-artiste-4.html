@@ -37,6 +37,16 @@
                 <p>L'enfance de Peter Dreher est très marquée par la guerre. Son père meurt sur le front de Russie et sa maison est détruite par les bombardements. Cela pourrait avoir influencé sa pratique de peintre qui s'ancre dans le réconfort et la sécurité de la répétition. De 1950 à 1956, il étudie à la Staatlichen Akademie der Bildenden Künste de Karlsruhe. En 1965, il devient enseignant, puis professeur en 1968, de la classe de peinture de cette même académie</p>
             </div>
 
+            <div x-data="{ open: false }">
+                <button class="john__info--sup"
+                  @click="open = !open"
+                ><p>Plus d'informations</p></button>
+                <ul class="john__info--link" x-show="open">
+                  <li><a href="https://fr.wikipedia.org/wiki/John_Baldessari">Wikipedia</a><li>
+                  <li><a href="https://www.wikiart.org/fr/john-baldessari">Wikiart</a></li>
+                </ul>
+              </div>
+
             <div class="img__oeuvre--section">
                 <img class="img--oeuvre" src="../public/img/oeuvre-peter-1.webp" alt="Oeuvre de Peter">
                 <img class="img--oeuvre" src="../public/img/oeuvre-peter-2.webp" alt="Oeuvre de Peter">

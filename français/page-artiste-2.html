@@ -42,6 +42,16 @@
                     À partir de 1980, il se consacre à la réalisation de tableaux constitués de photographies, d'images cinématographiques qu'il collectionne, recadre, colorise.</p>
             </div>
 
+            <div x-data="{ open: false }">
+                <button class="john__info--sup"
+                  @click="open = !open"
+                ><p>Plus d'informations</p></button>
+                <ul class="john__info--link" x-show="open">
+                  <li><a href="https://fr.wikipedia.org/wiki/John_Baldessari">Wikipedia</a><li>
+                  <li><a href="https://www.wikiart.org/fr/john-baldessari">Wikiart</a></li>
+                </ul>
+              </div>
+
             <div class="img__oeuvre--section">
                 <img class="img--oeuvre" src="../public/img/oeuvre-oleh1.webp" alt="Oeuvre d'Oleh">
                 <img class="img--oeuvre" src="../public/img/oeuvre-oleh-2.webp" alt="Oeuvre d'Oleh">

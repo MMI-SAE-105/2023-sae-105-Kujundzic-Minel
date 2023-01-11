@@ -1,3 +1,8 @@
+* {
+    list-style: none;
+    text-decoration: none;
+}
+
 body {
     margin: 0px;
 }
@@ -10,8 +15,6 @@ p {
     color: #000000;
     margin-left: 8%;
     margin-right: 8%;
-    font-size: 2,5rem;
-    line-height: 1,5rem;
 }
 
 h2 { 
@@ -76,8 +79,13 @@ h1 {
     font-size: 1rem;
     text-align: center;
     background-color: #505050;
-    list-style: none;
     position: relative;
+    border: none;
+    margin-inline: auto;
+    display: flex;
+    margin-top: -10px;
+    border-radius: 20px;
+
 }
 
 
@@ -86,9 +94,12 @@ h1 {
     font-size: 1rem;
     text-align: center;
     background-color: #505050;
-    list-style: none;
-    position: relative;
-    bottom: -80px;
+
+}
+
+.john__info--link li a {
+    color: rgb(0, 0, 0);
+    text-align: center;
 }
 
 
