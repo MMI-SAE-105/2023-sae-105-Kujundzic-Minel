@@ -1,0 +1,37 @@
+.widget--info {
+  background-color: #505050;
+  border-radius: 5%;
+  padding: 15px;
+  margin-bottom: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.widget--info p {
+    color: #fff;
+    font-size: 1.2em;
+    display: block;
+    text-align: center;
+  }
+
+  .titre-info-widget h1 {
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .info--importante {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 500%;
+  }
