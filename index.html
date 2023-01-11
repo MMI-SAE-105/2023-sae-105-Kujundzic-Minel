@@ -20,7 +20,7 @@
             <button class="header__btn" @click="open = ! open">
                 <img src="public/img/icon-menu.webp"icon menu">
             </button> 
-            <nav class="header__nav" x-show="open">
+            <nav class="header__nav" x-show="open" x-transition.duration.300ms.scale.80>
                 <button class="header__nav--btn" @click="open = ! open">
                     <img src="public/img/icon-menu.webp" alt="icon menu">
                 </button>
