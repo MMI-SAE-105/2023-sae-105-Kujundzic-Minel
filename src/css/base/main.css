@@ -1,7 +1,13 @@
 * {
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
+  
+  .noScroll,
+  .noScroll body {
+    overflow: hidden;
+  }
 
 body {
     margin: 0px;
