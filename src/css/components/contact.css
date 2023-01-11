@@ -18,12 +18,12 @@ p {
     width: 110px;
     display: inline-block;
     vertical-align: top;
-    margin: 6px;
+    margin: 8px;
   }
    
   em {
     font-weight: bold;
-    font-style: normal;
+    font-style: normal; 
     font-family: var(--dosis);
     color: #f00;
 
