@@ -26,14 +26,15 @@
     max-width: 100%;
     height: auto;
   }
+
 .carrousel_parent-image {
     display: flex;
     width: 100%;
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
-  
   }
+
 .carrousel_image {
   width: 70%;
   flex: none;
@@ -42,6 +43,7 @@
   margin-bottom: 5%;
   margin-left: 5%;
   }
+
 .carrousel_image figure {
     margin: 0;
   }
@@ -69,5 +71,5 @@
     }
     
     .carrousel_btn-apres {
-      right: 0;
+      right: 2%;
     }
