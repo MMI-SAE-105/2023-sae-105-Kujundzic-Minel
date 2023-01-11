@@ -49,8 +49,18 @@ h1 {
 
 .accueil__def {
     margin-bottom: -30%;
-    z-index: 20;
+    z-index: 1;
     color: #fff;
+    position: absolute;
+    bottom: 120px;
+    text-align: center;
+}
+
+
+
+.accueil__fond--intro {
+    position: relative;
+ 
 }
 
 
